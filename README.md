@@ -4,9 +4,9 @@ Official repository for the implementation of **Pure Spectral Graph Embeddings (
 ### Model Formulation
 PSGE estimates the user-item interaction matrix as:
 
-![equation](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%5Ctilde%7B%5Cmathrm%7BR%7D%7D%20=%20D_%7B%5Cmathcal%7BU%7D%7D%5E%7B-%5Calpha%7D%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%20=%20%5Ctilde%7B%5Cmathrm%7BP%7D%7D%5Ctilde%7B%5CLambda%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ET%20)
+![equation](https://latex.codecogs.com/svg.image?%5Ctilde%7B%5Cmathrm%7BR%7D%7D%20=%20D_%7B%5Cmathcal%7BU%7D%7D%5E%7B-%5Calpha%7D%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%20=%20%5Ctilde%7B%5Cmathrm%7BP%7D%7D%5Ctilde%7B%5CLambda%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ET)
 
-![equation](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%5Chat%7B%5Cmathrm%7BR%7D%7D%20=%20%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ETD_%7B%5Cmathcal%7BI%7D%7D%5E%7B%5Cbeta%7D)
+![equation](https://latex.codecogs.com/svg.image?%5Chat%7B%5Cmathrm%7BR%7D%7D%20=%20%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ETD_%7B%5Cmathcal%7BI%7D%7D%5E%7B%5Cbeta%7D)
 
 ### Best models hyperparameters
 For reproducibility purpose, we report the best hyperparameters found for the models during the Grid search, used to produce ***table 2***:
