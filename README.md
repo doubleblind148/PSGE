@@ -4,35 +4,33 @@ Official repository for the implementation of **Pure Spectral Graph Embeddings (
 ### Model Formulation
 PSGE estimates the user-item interaction matrix as:
 
-$$ \tilde{\mathrm{R}} = D_{\mathcal{U}}^{-\alpha}\mathrm{R}D_{\mathcal{I}}^{-\beta} = \tilde{\mathrm{P}}\tilde{\Lambda}\tilde{\mathrm{Q}}^T $$
+![equation](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%5Ctilde%7B%5Cmathrm%7BR%7D%7D%20=%20D_%7B%5Cmathcal%7BU%7D%7D%5E%7B-%5Calpha%7D%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%20=%20%5Ctilde%7B%5Cmathrm%7BP%7D%7D%5Ctilde%7B%5CLambda%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ET%20)
 
-$$\hat{\mathrm{R}} = \mathrm{R}D_{\mathcal{I}}^{-\beta}\tilde{\mathrm{Q}}\tilde{\mathrm{Q}}^TD_{\mathcal{I}}^{\beta}$$
-
-$$$$
+![equation](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%5Chat%7B%5Cmathrm%7BR%7D%7D%20=%20%5Cmathrm%7BR%7DD_%7B%5Cmathcal%7BI%7D%7D%5E%7B-%5Cbeta%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5Ctilde%7B%5Cmathrm%7BQ%7D%7D%5ETD_%7B%5Cmathcal%7BI%7D%7D%5E%7B%5Cbeta%7D)
 
 ### Best models hyperparameters
 For reproducibility purpose, we report the best hyperparameters found for the models during the Grid search, used to produce ***table 2***:
 #### **Movielens1M**
-* **BPR:** $l_2=0.0$, $\alpha=0.0001$
-* **LightGCN:** convolution depth $=3$, $\alpha=0.001$, $l_2=0$ 
-* **PureSVD:** $k=20$
-* **EASE:** $l_2=0.1$
-* **SGMC:** $k=80$
-* **PSGE:** $\alpha=0.3$, $\beta=0.4$, $k=80$
+* **BPR:** l_2=0.0, alpha=0.0001
+* **LightGCN:** convolution depth =3, alpha=0.001, l_2=0 
+* **PureSVD:** k=20
+* **EASE:** l_2=0.1
+* **SGMC:** k=80
+* **PSGE:** alpha=0.3, beta=0.4, k=80
 #### **Amazon**
-* **BPR:** $l_2=0.00001$, $\alpha=0.001$
-* **LightGCN:** convolution depth $=1$, $\alpha=0.001$, $l_2=0.00001$ 
-* **PureSVD:** $k=10$
-* **EASE:** $l_2=0.1$
-* **SGMC:** $k=40$
-* **PSGE:** $\alpha=0.3$, $\beta=0.5$, $k=80$
+* **BPR:** l_2=0.00001, alpha=0.001
+* **LightGCN:** convolution depth =1, alpha=0.001, l_2=0.00001 
+* **PureSVD:** k=10
+* **EASE:** l_2=0.1
+* **SGMC:** k=40
+* **PSGE:** alpha=0.3, beta=0.5, k=80
 #### **Gowalla**
-* **BPR:** $l_2=0.0$, $\alpha=0.001$
-* **LightGCN:** convolution depth $=4$, $\alpha=0.001$, $l_2=0.0$ 
-* **PureSVD:** $k=1500$
-* **EASE:** $l_2 = 0.01$ 
-* **SGMC:** $k=1500$
-* **PSGE:** $\alpha=0.3$, $\beta=0.4$, $k=1500$
+* **BPR:** l_2=0.0, alpha=0.001
+* **LightGCN:** convolution depth =4, alpha=0.001, l_2=0.0 
+* **PureSVD:** k=1500
+* **EASE:** l_2 = 0.01 
+* **SGMC:** k=1500
+* **PSGE:** alpha=0.3, beta=0.4, k=1500
 ### Requirements
 To install all the required packages using the following command:
 	
