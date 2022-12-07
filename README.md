@@ -60,6 +60,5 @@ Available models are: **matrix_factorization_bpr, LightGCN, pureSVD, EASE, SGMC,
 ### Experiments
 All the experiments presented in the paper can be reproduced running the corrispective file under the `experiments` folder
 * **Figure 1:** `experiments/plot/01_plot_lightgcn_filters.py`
-* **Figure 2:** `experiments/02a_plot_span_eigv_through_epoch.ipynb` and `experiments/02b_plot_progressive_span_eigenv.ipynb`
 * **Figure 3:** `experiments/03_plot_spectral_model_performace.ipynb`
 * **Figure 4:** `experiments/04_plot_psge_pop_acc_tradeoff.ipynb`
